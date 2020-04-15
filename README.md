@@ -14,10 +14,12 @@ Givet basen
 >
 > F|namn|födelseår
 
-Där Person kan följas av Telefon, Adress och Familj
+Där Person kan följas av Telefon, Adress och Familj<br>
+
 Familj kan följas av Telefon, Adress
 
-Generera XML likt:
+Generera XML likt:<br>
+
 <code>
     <people>
         <person>

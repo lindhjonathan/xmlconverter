@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+#Kika på att skapa executable av pyscript: http://www.py2exe.org/
 
 def readFile():
     filename = "to_transform.txt"
