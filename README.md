@@ -20,7 +20,7 @@ Familj kan följas av Telefon, Adress
 
 Generera XML likt:
 
->
+```
 > <people>
 >     <person>
 >         <firstname></firstname>
@@ -36,7 +36,7 @@ Generera XML likt:
 >     </person>
 >     <person>...</person>
 > </people>
->
+```
 
 ## Dependencies
 
