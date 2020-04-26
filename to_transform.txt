@@ -1,7 +1,3 @@
-P|förnamn|efternamn
-T|mobilnummer|fastnätsnummer
-A|gata|stad|postnummer
-F|namn|födelseår
 P|Carl Gustaf|Bernadotte
 T|0768-101801|08-101801
 A|Drottningholms slott|Stockholm|10001
@@ -11,3 +7,6 @@ F|Carl Philip|1979
 T|0768-101802|08-101802
 P|Barack|Obama
 A|1600 Pennsylvania Avenue|Washington, D.C
+P|Jonathan|Lindh
+T|0727-172839|08-266420
+A|Valhallavägen|Karlskrona|37140

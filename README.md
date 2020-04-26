@@ -1,8 +1,10 @@
 # xmlconverter
 
-##Text to XML Converter
+## Text to XML Converter
 
-Det ena systemet levererar ett radbaserat filformat medan det andra kräver XML. Du ska skriva en konverterare som bygger upp rätt XML-struktur.
+
+
+Denna konverterare tar emot en textfil från ett gammalt utomstående system och skriver om denna fil till XML.
 
 Givet basen
 
@@ -30,6 +32,8 @@ Generera XML likt:<br>
             <phone>
             </phone>
             <family>
+                <name>..</name>
+                <born>..</born>
             </family>
         </person>
         <person>...</person>
