@@ -19,7 +19,6 @@ def convertToXML(lines):
     for index, line in enumerate(lines):
         if lines[index][0] is "P" and not None:
             personlist = lines[index].split("|")
-            print("in person")
             xml_person = xml.Element("person")
             xml_person.text = "\n\t\t"
             xml_person.tail = "\n\t"
@@ -34,7 +33,6 @@ def convertToXML(lines):
             nextline = index + 1
             while nextline < len(lines) and lines[nextline][0] is not "P":
                 if lines[nextline][0] is "F":
-                    print("family")
                     familylist = lines[nextline].split("|")
 
                     xml_family = xml.SubElement(xml_person, "family")
@@ -49,7 +47,6 @@ def convertToXML(lines):
 
 
                     if lines[nextline+1][0] is "T":
-                        print("family phone")
                         phonelist = lines[nextline+1].split("|")
 
                         xml_phone = xml.SubElement(xml_family, "phone")
@@ -65,7 +62,6 @@ def convertToXML(lines):
                         nextline +=1
 
                     if lines[nextline+1][0] is "A":
-                        print("family address")
                         addresslist = lines[nextline+1].split("|")
 
                         xml_address = xml.SubElement(xml_family, "address")
@@ -108,7 +104,6 @@ def convertToXML(lines):
 
 
                 elif lines[nextline][0] is "T":
-                    print("phone")
                     phonelist = lines[nextline].split("|")
 
                     xml_phone = xml.SubElement(xml_person, "phone")
@@ -137,9 +132,6 @@ def writeXMLFile(xml_to_write):
     xml_str = xml.tostring(xml_tree.getroot(), encoding='unicode', method="xml", short_empty_elements=False)
 
     filename = "transformed.xml"
-    #print(xml_tree.iter('tag'=None))
-
-    #xml.ElementTree(xml_str).write(open(filename, 'w+'), encoding='unicode')
 
     with open(filename, "w+") as filehandle:
         filehandle.write(xml_str)

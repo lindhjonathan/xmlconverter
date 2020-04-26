@@ -47,4 +47,5 @@ The script assumes the base text file to convert to be named 'to_transform.txt'
 
 1. Clone this repository
 2. Move to ../xmlconverter
-3. run by typing 'python3 converter.py'
+3. Run by typing 'python3 converter.py'
+4. On success, an XML file will be generated called 'transformed.xml'
